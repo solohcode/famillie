@@ -1,29 +1,35 @@
+import { lazy } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
-  Link
 } from "react-router-dom";
 
 
 function App() {
-  const routes = createBrowserRouter([
+  const routes = [
     {
       path: "/",
-      element: (
-        <div>
-          <h1>Hello World</h1>
-          <Link to="about">about</Link>
-        </div>
-      ),
+      element: lazy(() => import("./pages/home")),
     },
     {
-      path: "about",
-      element: <div>About</div>,
+      path: "/home",
+      element: lazy(() => import("./pages/home")),
     },
-  ]);
+    {
+      path: "/faq",
+      element: lazy(() => import("./pages/faq")),
+    },
+    {
+      path: "/policy",
+      element: lazy(() => import("./pages/policy")),
+    },
+  ]
+
+
+  const route = createBrowserRouter(routes);
   return (
     <div className="App">
-      <RouterProvider router={routes} />
+      <RouterProvider router={route} />
     </div>
   );
 }
