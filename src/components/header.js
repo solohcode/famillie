@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import logo from '../../../images/logo.png'
+import logo from '../images/logo.png'
 
 
-const PolicyHeader = () => {
+const Header = () => {
     let Links =[
       {name:"Home",link:"/home"},
       {name:"About Us",link:"/about"},
@@ -40,4 +40,4 @@ const PolicyHeader = () => {
 </div>
 )} 
 
-export default PolicyHeader
+export default Header

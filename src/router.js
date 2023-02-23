@@ -2,9 +2,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import FaqPage from "./components/pages/faq";
-import HomePage from "./components/pages/home";
-import PolicyPage from "./components/pages/policy";
+import FaqPage from "./pages/faq";
+import HomePage from "./pages/home";
+import PolicyPage from "./pages/policy";
 
 
 function App() {
