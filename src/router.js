@@ -1,27 +1,29 @@
-import { lazy } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import FaqPage from "./pages/faq";
+import HomePage from "./pages/home";
+import PolicyPage from "./pages/policy";
 
 
 function App() {
   const routes = [
     {
       path: "/",
-      element: lazy(() => import("./pages/home")),
+      element: <HomePage />,
     },
     {
       path: "/home",
-      element: lazy(() => import("./pages/home")),
+      element: <HomePage />,
     },
     {
       path: "/faq",
-      element: lazy(() => import("./pages/faq")),
+      element: <FaqPage />,
     },
     {
       path: "/policy",
-      element: lazy(() => import("./pages/policy")),
+      element: <PolicyPage />,
     },
   ]
 
