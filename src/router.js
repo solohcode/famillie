@@ -12,13 +12,18 @@ function App() {
       element: (
         <div>
           <h1>Hello World</h1>
-          <Link to="about">about</Link>
+          <Link to="faq">about</Link>
         </div>
       ),
     },
     {
-      path: "about",
-      element: <div>About</div>,
+      path: "faq",
+      element: 
+      <div>
+        <div>
+          <h1 className="text-center">Frequently Asked Questions</h1>
+        </div>
+      </div>,
     },
   ]);
   return (
