@@ -8,7 +8,10 @@ const Accorddionn = () => {
     <div>
         <Accordion arrowIcon={AiOutlinePlusCircle}>
             <Accordion.Panel>
-                <Accordion.Title>
+                <Accordion.Title
+                    style={{color:'#2F21AA'}}
+                    
+                >
                 Is my information safe with 4Famillie?
                 </Accordion.Title>
                 <Accordion.Content>
@@ -18,7 +21,10 @@ const Accorddionn = () => {
                 </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
-                <Accordion.Title>
+                <Accordion.Title
+                    style={{color:'#2F21AA'}}
+                    
+                >
                 Do 4Famillie App have access to my Wallet?
                 </Accordion.Title>
                 <Accordion.Content>
@@ -28,7 +34,9 @@ const Accorddionn = () => {
                 </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
-                <Accordion.Title>
+                <Accordion.Title
+                    style={{color:'#2F21AA'}}
+                >
                 Do 4Famillie App have access to my Wallet?
                 </Accordion.Title>
                 <Accordion.Content>
