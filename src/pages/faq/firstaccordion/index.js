@@ -1,8 +1,10 @@
-import {AiOutlinePlusCircle, AiOutlineMinusCircle} from 'react-icons/ai'
+// import React from 'react'
 import React, { useState } from 'react'
+import {AiOutlinePlusCircle, AiOutlineMinusCircle} from 'react-icons/ai'
+
 import './style.css'
 
-const Accorddionn = () => {
+const Testing = () => {
 
     const [selected, setSelected] = useState(null)
     const toggle = i => {
@@ -35,17 +37,13 @@ const Accorddionn = () => {
 
 const data = [
     {
-        question: 'Is my information safe with 4Famillie?',
+        question: 'What is 4Famillie?',
         answer: 'Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen.'
     },
     {
-        question: 'Do 4Famillie App have access to my Wallet?',
+        question: 'How 4Famillie Works',
         answer: 'Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen.'
     },
-    {
-        question: 'Do 4Famillie App have access to my Wallet?',
-        answer: 'Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen. Screen time feature to help Parents track kids time on screen.'
-    }
 ]
 
-export default Accorddionn
+export default Testing
