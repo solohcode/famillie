@@ -8,7 +8,7 @@ import Testing from './firstaccordion'
 function FaqPage() {
   return (
       <div className='faq px-7'>
-        <h1 className='my-5 font-bold text-center text-3xl'>Frequently Asked Questions</h1>
+        <h1 className='my-7 font-bold text-center text-3xl'>Frequently Asked Questions</h1>
         <div className='flex items-center'>
           <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent md:from-primary to-primary md:to-accent'> We have answers to your Question </span>
           <div className='w-full'>
