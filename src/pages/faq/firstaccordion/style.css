@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    height: auto;
+    /* width: 100vw; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.accordion{
+    width: 600px;
+}
+
+.item{
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    /* background: rgb(240, 240, 195); */
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: #2F21AA;
+}
+
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.content.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+
+}

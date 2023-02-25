@@ -1,21 +1,3 @@
-/* #myelement {
-    position: relative;
-    overflow: hidden;
-    transform: rotate(30deg);
-  }
-  
-  #myelement::before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    z-index: -1;
-    background: url(background.png) 0 0 repeat;
-    transform: rotate(-30deg);
-  } */
-
   .faq{
     background-image: url(../../images/backgroundlogo.png);
   }
