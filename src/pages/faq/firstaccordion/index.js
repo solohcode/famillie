@@ -14,8 +14,8 @@ const Testing = () => {
         setSelected(i)
     }
   return (
-    <div className='mt-5  wrapper'>
-        <div className='accordion'>
+    <div className='w-full mt-5  wrapper'>
+        <div className='accordion w-full'>
             {data.map((item, i) => (
                 <div className='item'>
                     <div 
