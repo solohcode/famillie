@@ -25,7 +25,7 @@ function Footer() {
     <div className='w-full bg-light border-t'>
       <div className='py-10 px-5 md:px-20 space-y-20 font-medium text-center sm:text-start'>
         <Bounce bottom>
-          <div className='sm:flex md:gap-5 space-y-10 sm:space-y-0'>
+          <div className='flex flex-col-reverse sm:flex-row  md:gap-5 space-y-10 sm:space-y-0'>
 
             <div className='w-full sm:w-[25%] md:w-[20%] space-y-10'>
               <Fade big>
@@ -38,7 +38,7 @@ function Footer() {
               <p>An application that connects Family members together.</p>
               <div className='flex justify-around'>
                 {socials.map((social)=>(
-                  <Button color="light" className='bg-slate text-prime border-0' key={social.url}>
+                  <Button color="light" className='!bg-slate text-prime border-0' key={social.url}>
                     <span className='text-2xl'>{social.child}</span>
                   </Button>
                 ))}
