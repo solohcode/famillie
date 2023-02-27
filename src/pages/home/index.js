@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Try from "../policy/try.js";
 
 function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <div>
+      <Try />
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;
