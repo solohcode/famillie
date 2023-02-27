@@ -1,7 +1,10 @@
 import {
-  createBrowserRouter,
-  RouterProvider,
+  Route,
+  Routes,
 } from "react-router-dom";
+import Footer from "./components/footer";
+import Header from "./components/header/header";
+import Error404Page from "./pages/auth/404";
 import FaqPage from "./pages/faq";
 import HomePage from "./pages/home";
 import PolicyPage from "./pages/policy";
@@ -25,13 +28,20 @@ function App() {
       path: "/policy",
       element: <PolicyPage />,
     },
+    {
+      path: "*",
+      element: <Error404Page />,
+    },
   ]
-
-
-  const route = createBrowserRouter(routes);
   return (
-    <div className="App">
-      <RouterProvider router={route} />
+    <div className="text-primary_dark">
+      <Header />
+      <Routes>
+        {routes.map(({path, element})=>(
+          <Route key={path} path={path} element={element} />
+        ))}
+      </Routes>
+      <Footer />
     </div>
   );
 }
