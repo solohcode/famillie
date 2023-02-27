@@ -34,7 +34,7 @@ function App() {
     },
   ]
   return (
-    <div className="text-primary_dark">
+    <div className="w-full text-primary_dark">
       <Header />
       <Routes>
         {routes.map(({path, element})=>(

@@ -1,14 +1,13 @@
 import React from 'react'
 import { TextInput } from 'flowbite-react'
 import {CiSearch} from 'react-icons/ci'
-import './style.css'
 import Accorddionn from './secondaccordion'
 import Testing from './firstaccordion'
 import { Bounce, Fade } from 'react-reveal'
 
 function FaqPage() {
   return (
-      <div className='w-full faq px-4 md:px-32 py-20'>
+      <div className='w-full bg-fadedLogo px-4 md:px-32 py-10 md:py-20'>
         <Fade big>
           <h1 className='my-5 font-bold text-center text-3xl'>Frequently Asked Questions</h1>
         </Fade>

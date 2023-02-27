@@ -10,7 +10,7 @@ const Header = () => {
   const navLinks = [
     {
       title: "Home",
-      link: "/home",
+      link: "/",
     },
     {
       title: "About Us",
@@ -33,7 +33,7 @@ const Header = () => {
         },
         {
           title: "Private Policy",
-          link: "/privacy"
+          link: "/policy"
         },
       ]
     },
@@ -53,7 +53,7 @@ const Header = () => {
           />
         </Navbar.Brand>
         <div className="flex md:order-2">
-          <Button className='hidden md:block'>
+          <Button className='hidden md:block bg-primary'>
             Get The App
           </Button>
           <Navbar.Toggle />
@@ -68,7 +68,7 @@ const Header = () => {
                   {nav.title}
                 </Navbar.Link>}
                 placement="bottom"
-                className='w-'
+                className=''
               >
                 {nav.children.map((child)=>(
                   <Dropdown.Item
@@ -84,7 +84,7 @@ const Header = () => {
             <Navbar.Link
               key={nav.link}
               href={nav.link}
-              active={path.includes(nav.link)}
+              active={path === (nav.link)}
             >
               {nav.title}
             </Navbar.Link>

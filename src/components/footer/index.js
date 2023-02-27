@@ -70,7 +70,7 @@ function Footer() {
                   placeholder="Enter your mail..."
                   className='w-full'
                 />
-                <Button className='bg-prime'>Subscribe</Button>
+                <Button className='bg-primary'>Subscribe</Button>
               </div>
             </div>
 
