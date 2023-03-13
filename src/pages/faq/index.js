@@ -7,6 +7,31 @@ import { Bounce, Fade } from 'react-reveal'
 
 function FaqPage() {
   return (
+<<<<<<< HEAD
+      <div className='faq px-7'>
+        <h1 className='my-7 font-bold text-center text-3xl'>Frequently Asked Questions</h1>
+        <div className='flex items-center'>
+          <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent md:from-primary to-primary md:to-accent'> We have answers to your Question </span>
+          <div className='w-full'>
+            <TextInput
+              className='px-5 py-7 bg-white border-slate-400 '
+              id="email"
+              type="text"
+              icon={CiSearch}
+              placeholder="Search a Question"
+              required={true}
+            />
+          </div>
+        </div>
+        <div className='flex flex-row px-4'>
+          <p className='mx-7 font-bold'>General Question</p>
+          <Testing />
+        </div>
+        <div className='flex flex-row px-4'>
+          <p  className='mx-7 font-bold'>Safety & Security</p>
+          <Accorddionn />
+        </div>
+=======
       <div className='w-full bg-fadedLogo px-4 md:px-32 py-10 md:py-20'>
         <Fade big>
           <h1 className='my-5 font-bold text-center text-3xl'>Frequently Asked Questions</h1>
@@ -49,6 +74,7 @@ function FaqPage() {
             </div>
           </div>
         </Bounce>
+>>>>>>> 3dcb6765d99d09e94385670a0032f3f34178f2eb
     </div>
   )
 }
