@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* other styling  */
+.bg-fadedLogo{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/backgroundlogo.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 50% auto;
+  background-attachment: fixed;
+}
